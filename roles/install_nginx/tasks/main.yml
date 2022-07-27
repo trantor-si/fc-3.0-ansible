@@ -1,18 +1,22 @@
 ---
+# tasks file for install_nginx
 - name: Install nginx
-  apt:
+  # shell: sudo apt-get install nginx
+  apt: # outra forma
     pkg:
-      - nginx
-      - nodejs
-      - npm
-    state: present
-    update_cache: yes
+    - nginx
+    - nodejs
+    - npm
+    state: present # precisa existir, se não existir. instalar (desinstalar = "absent"  )
+    update_cache: yes # para o apt-get update antes do upt-get install
 
 - name: Init nginx
-  service:
+  # shell: sudo service nginx start
+  service: # outra forma
     name: nginx
     state: started
 
+# install express server and node app
 - name: create dir /app
   file:
     path: /app

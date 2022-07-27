@@ -1,4 +1,4 @@
 ---
 # vars file for install_nginx
-hello_fullcycle: "Hello Full Cycle!!!"
+hello_fullcycle: "Hello, Trantor World!!!"
 url_app: "http://localhost:3002"

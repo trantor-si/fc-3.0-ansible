@@ -1,0 +1,5 @@
+---
+# tasks file for erase_nginx
+- name: Remove nginx
+  shell: sudo apt-get purge nginx nginx-common nginx-full -y
+

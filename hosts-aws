@@ -1,0 +1,13 @@
+[manager]
+# i-00ac6d7f367314f61
+ec2-54-210-100-73.compute-1.amazonaws.com
+
+[worker]
+# i-009de2671410a19c0
+ec2-52-87-128-33.compute-1.amazonaws.com
+# i-0d172e272969a51ed
+ec2-44-204-24-174.compute-1.amazonaws.com
+
+[all:vars]
+ansible_ssh_private_key_file=/home/trantor-si/.ssh/trantor-ec2-keypair.pem
+ansible_user=ubuntu
